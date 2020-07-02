@@ -1,7 +1,7 @@
 const express=require('express')
 const app=express()
 const PORT=8000
-app.get("/",function(req,res){
+app.user("/",function(req,res){
     res.send("<h1>Server started succesfully </h1>")
 })
 
