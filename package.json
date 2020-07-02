@@ -1,0 +1,14 @@
+{
+  "name": "online_food_delivery_system",
+  "version": "1.0.0",
+  "description": "Website which enables the students of campus to order food from campus canteen",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Uday Kiran Bakka, K Siddu Roy , P Naresh",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
