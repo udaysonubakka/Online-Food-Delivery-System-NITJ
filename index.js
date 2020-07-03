@@ -1,13 +1,13 @@
 const express=require('express')
 const app=express()
-const PORT=8000
-app.user("/",function(req,res){
-    res.send("<h1>Server started succesfully </h1>")
-})
+const PORT=process.env.PORT || 8000
 
-app.listen(PORT,function(err){
-    if(err)
-    {console.log("Error in starting port")}
-    else{console.log("Server started successfully");}
-    return
+app.set('view engine','ejs')
+const homeController=require('./controller/homeController')
+
+app.use("/",homeController)
+
+app.listen(PORT,(err)=>{
+    if(err) console.log("Error in starting port")
+    else console.log("Server started successfully");
 })
