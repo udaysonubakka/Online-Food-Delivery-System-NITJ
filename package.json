@@ -4,7 +4,9 @@
   "description": "Website which enables the students of campus to order food from campus canteen",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "devStart": "nodemon server.js"
   },
   "author": "Uday Kiran Bakka, K Siddu Roy , P Naresh",
   "license": "ISC",
