@@ -1,0 +1,30 @@
+<% include ../partials/header %> 
+
+     <header class="jumbotron">
+         <div class="container">
+             <h1><span class="glyphicon glyphicon-tent"></span> Welcome To Foddie
+!</h1>
+             <p>View our hand-picked canteens from all over the world</p>
+             <p>
+                <a class="btn btn-primary btn-lg" href="/canteens/new">Add New Canteen</a>
+             </p>
+         </div>
+     </header>
+     
+     <div class="row text-center" style="display:flex; flex-wrap: wrap;">
+        <% canteens.forEach(function(canteen){ %>
+            <div class="col-md-3 col-sm-6">
+                <div class="thumbnail">
+                   <img src="<%= canteen.image %>">
+                   <div class="caption">
+                       <h4><%= canteen.name %></h4>
+                   </div>
+                   <p>
+                       <a href="/canteens/<%= canteen._id %>" class="btn btn-primary">More Info</a>
+                   </p>
+                </div>
+            </div>
+        <% }); %>
+    </div>
+
+<% include ../partials/footer %>
